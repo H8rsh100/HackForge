@@ -62,7 +62,7 @@ def delete_hackathon(hackathon_id: int, db: Session = Depends(get_db)):
 
 @router.get("/{hackathon_id}/leaderboard")
 def get_leaderboard(hackathon_id: int, db: Session = Depends(get_db)):
-    result = db.execute(text("CALL GetLeaderboard(:id)"), {"id": hackathon_id})
+    result = db.execute(text("SELECT * FROM leaderboard WHERE hackathon_id = :id ORDER BY team_rank"), {"id": hackathon_id})
     return [dict(row._mapping) for row in result]
 
 @router.get("/{hackathon_id}/announcements")

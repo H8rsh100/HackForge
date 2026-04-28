@@ -35,7 +35,6 @@ def get_team(team_id: int, db: Session = Depends(get_db)):
 
 @router.get("/{team_id}/profile")
 def get_team_profile(team_id: int, db: Session = Depends(get_db)):
-    db.execute(text("CALL GetTeamFullProfile(:id)"), {"id": team_id})
     result = db.execute(text("CALL GetTeamFullProfile(:id)"), {"id": team_id})
     return [dict(row._mapping) for row in result]
 
