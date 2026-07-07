@@ -6,7 +6,7 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)](https://react.dev/)
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F27?style=for-the-badge&logo=python&logoColor=white)](https://www.sqlalchemy.org/)
 
-> **Unified Hackathon Management & Analytics Engine** — A professional database-centric portal designed to automate hackathon logistics. Track registrations, coordinate mentor assignments, calculate weighted judge scores, view real-time leaderboards, and monitor college performance metrics.
+> **Unified Hackathon Management & Analytics Engine** - A professional database-centric portal designed to automate hackathon logistics. Track registrations, coordinate mentor assignments, calculate weighted judge scores, view real-time leaderboards, and monitor college performance metrics.
 
 Developed as a **DBMS Course Project CP1 (Structured SQL & Relational Models)**.
 
@@ -156,6 +156,6 @@ npm run dev
 
 ---
 
-## 🤝 License
+## License
 
-Distributed under the [MIT License](LICENSE).
+MIT - see LICENSE.
